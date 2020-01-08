@@ -7,7 +7,12 @@ i make some algorithm loop with php languange.
 algorithm to search distance between point 1 to point 2
 
 ## spiral matrix
-print matrix like this :
-9 |10|11|12
-8 |1 |2 | 3
-7 |6 |5 | 4
+
+print matrix like this
+
+| 7 | 8 | 9 |
+
+| 6 | 1 | 2 |
+
+| 5 | 4 | 3 |
+
