@@ -37,6 +37,7 @@ for ($i=0; $i < $ukuran_matrix; $i++) {
         
         if($action[$last_action] == "bawah"){
             //LOOP bawah
+            // $co_x = ($co_x == $kolom-1)?0:$co_x+1;
             if(!isset($matrix[$co_x+1][$co_y]) || $matrix[$co_x+1][$co_y] != 0){
                 $last_action = ($last_action == 3)?0:$last_action+1;
                 echo "change action to $last_action <br>";
@@ -47,6 +48,7 @@ for ($i=0; $i < $ukuran_matrix; $i++) {
         
         if($action[$last_action] == "kanan"){
             //LOOP kanan
+            // $co_y = ($co_y == $baris-1)?0:$co_y+1;
             
             if(!isset($matrix[$co_x][$co_y+1]) || $matrix[$co_x][$co_y+1] != 0){
                 $last_action = ($last_action == 3)?0:$last_action+1;
@@ -58,6 +60,7 @@ for ($i=0; $i < $ukuran_matrix; $i++) {
         
         if($action[$last_action] == "atas"){
             //LOOP atas
+            // $co_x = ($co_x == 0)?$kolom-1:$co_x-1;
             
             if(!isset($matrix[$co_x-1][$co_y]) || $matrix[$co_x-1][$co_y] != 0){
                 $last_action = ($last_action == 3)?0:$last_action+1;
@@ -69,12 +72,13 @@ for ($i=0; $i < $ukuran_matrix; $i++) {
         
         if($action[$last_action] == "kiri"){
             //LOOP kiri
+            // $co_y = ($co_y == 0)?$baris-1:$co_y-1;
             
             if(!isset($matrix[$co_x][$co_y-1]) || $matrix[$co_x][$co_y-1] != 0){
                 $last_action = ($last_action == 3)?0:$last_action+1;
                 echo "change action to $last_action <br>";
             }else{
-                $co_y = ($co_y == 0)?$baris-1:$co_y-1;
+                $co_y = ($co_y == 0)?$baris-1:$co_y-1;  
             }
         }
         
