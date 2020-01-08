@@ -1,7 +1,7 @@
 # LOOP AGORITHM
 with PHP languange
 
-i make some algorithm loop with php languange.
+i make some algorithm loop with varian languange programming.
 
 ## floyd
 algorithm to search distance between point 1 to point 2
